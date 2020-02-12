@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  .box{
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin: 20px;
+  }
+  .dashed{
+    height: 300px;
+    border: 3px dashed black;
+  }
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Pagina web</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+
+    <script type="text/javascript" src="javascript/ejemplo-dom.js"></script>
+</head>
+<body>
+  <!--
+    1. Formulario campos : Nombre, Apellidos y edad
+    2. Boton de enviar el formulario: eventos submit
+    3. Mostrar datos por pantalla
+    4. Tener un boton que al darle click nos muestra los datos actuales del Formulario
+  -->
+  <h1 class="display-4 text-center" >Form Test</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="box">
+          <form action="#" method="POST" id="formulario">
+            <span id="error_form"></span>
+            <div class="form-group">
+
+              <label for="nombre">nombre:</label>
+              <input type="text" id="nombre" placeholder="nombre" name="nombre">
+              <label for="apellido">apellido:</label>
+              <input type="text" id="apellido" name ="apellido" placeholder="apellido">
+              <label for="edad">edad:</label>
+              <input type="number" id="edad" name="edad" placeholder="numero">
+              <button type="submit"  class="btn btn-info" value="enviar">Enviar</button>
+            </div>
+          </form>
+
+          <div class="dashed">
+            <h3>informacion del personal</h3>
+            <p id = "p_nombre">
+              Nombre : <span></span>
+            </p>
+            <p id="p_apellido">
+              Apellido : <span></span>
+            </p>
+
+            <p id="p_edad">
+              Edad: <span></span>
+            </p>
+            <hr/>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+</body>
+</html>
